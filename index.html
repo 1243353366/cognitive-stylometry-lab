@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CogniTrace | Cognitive Stylometry Lab</title>
+    <meta
+      name="description"
+      content="RAG-aware cognitive stylometry analysis for source attribution, tone, and cognitive fingerprinting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">C</div>
+          <span>CogniTrace</span>
+        </div>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#method">Method</a>
+          <a href="#samples">Samples</a>
+          <a href="#upload">Upload</a>
+        </nav>
+        <button class="ghost-btn">Book demo</button>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">RAG-aware attribution intelligence</span>
+            <h1>Measure verbs, tone, and cognitive style before the source is washed.</h1>
+            <p>
+              CogniTrace ingests PDFs, screenshots, and extracted text to compare
+              linguistic fingerprints, rhetorical framing, and decision patterns.
+              Built for serious review workflows where a small sample is not enough.
+            </p>
+
+            <div class="cta-row">
+              <button class="primary-btn" data-scroll-target="upload">Upload evidence</button>
+              <button class="secondary-btn" data-scroll-target="method">See method</button>
+            </div>
+
+            <ul class="mini-stats">
+              <li>
+                <strong>Verb framing</strong>
+                <span>agency / causality / timing</span>
+              </li>
+              <li>
+                <strong>Tone profile</strong>
+                <span>certainty / hedging / confidence</span>
+              </li>
+              <li>
+                <strong>Cognition map</strong>
+                <span>abstract vs. concrete reasoning</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-panel">
+            <div class="glass-card signal-card">
+              <div class="card-head">
+                <span class="dot green"></span>
+                <span>Live Analysis</span>
+              </div>
+
+              <div class="score-row">
+                <div>
+                  <span class="label">Cognitive stability</span>
+                  <h3>84%</h3>
+                </div>
+                <div class="pill success">Low drift</div>
+              </div>
+
+              <div class="meter-row">
+                <div class="meter-labels">
+                  <span>Verb framing</span>
+                  <span>72%</span>
+                </div>
+                <div class="meter"><i style="width: 72%"></i></div>
+              </div>
+
+              <div class="meter-row">
+                <div class="meter-labels">
+                  <span>Tone fidelity</span>
+                  <span>79%</span>
+                </div>
+                <div class="meter"><i style="width: 79%"></i></div>
+              </div>
+
+              <div class="meter-row">
+                <div class="meter-labels">
+                  <span>Conceptual drift</span>
+                  <span>18%</span>
+                </div>
+                <div class="meter warn"><i style="width: 18%"></i></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="feature-strip">
+          <div class="feature-box">
+            <span class="icon">●</span>
+            <div>
+              <h4>RAG-aware evidence review</h4>
+              <p>Compare source text against retrieved context and decision pathways.</p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <span class="icon">↗</span>
+            <div>
+              <h4>Verb + tone scoring</h4>
+              <p>Quantify agency, certainty, causal structure, and rhetorical intensity.</p>
+            </div>
+          </div>
+          <div class="feature-box">
+            <span class="icon">◎</span>
+            <div>
+              <h4>Cognitive fingerprinting</h4>
+              <p>Detect authorial patterns beyond vocabulary: framing, assumptions, and flow.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="method" class="method">
+          <div class="section-header">
+            <span class="eyebrow">How it works</span>
+            <h2>Heavy samples produce better cognitive traces.</h2>
+          </div>
+
+          <div class="method-grid">
+            <article class="method-card">
+              <div class="num">01</div>
+              <h3>Ingest</h3>
+              <p>Upload a PDF, screenshot, or pasted transcript for structured extraction.</p>
+            </article>
+            <article class="method-card">
+              <div class="num">02</div>
+              <h3>Parse</h3>
+              <p>Break down verbs, modality, sentence structure, and discourse framing.</p>
+            </article>
+            <article class="method-card">
+              <div class="num">03</div>
+              <h3>Compare</h3>
+              <p>Cross-check against reference samples, retrieval context, and style baselines.</p>
+            </article>
+            <article class="method-card">
+              <div class="num">04</div>
+              <h3>Score</h3>
+              <p>Return a risk profile for tone drift, conceptual laundering, and LLM-like smoothing.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="upload" class="upload-area">
+          <div class="upload-copy">
+            <span class="eyebrow">Evidence intake</span>
+            <h2>Upload a document or screenshot to begin analysis.</h2>
+            <p>
+              Best results come from a heavier sample set: long-form writing,
+              multiple documents, and contextual evidence. One short excerpt gives
+              only a partial view of the cognitive pattern.
+            </p>
+            <div class="sample-note">
+              <strong>Sample recommendation:</strong>
+              20–50 pages, 2–5 documents, or a transcript with surrounding context.
+            </div>
+          </div>
+
+          <div class="upload-panel">
+            <label class="dropzone" for="fileInput">
+              <input id="fileInput" type="file" multiple accept=".pdf,image/*" />
+              <div class="dropzone-inner">
+                <div class="upload-icon">⇪</div>
+                <h3>Drop files here</h3>
+                <p>PDFs, screenshots, images, or source text</p>
+                <span>Browse files</span>
+              </div>
+            </label>
+
+            <div class="queue-box">
+              <div class="queue-head">
+                <span>Upload queue</span>
+                <span class="status idle">Ready</span>
+              </div>
+              <ul id="fileList" class="file-list">
+                <li>No files selected</li>
+              </ul>
+            </div>
+
+            <button id="analyzeBtn" class="primary-btn full-width">Analyze evidence</button>
+          </div>
+        </section>
+
+        <section id="samples" class="results-panel">
+          <div class="section-header">
+            <span class="eyebrow">Output</span>
+            <h2>Interpretability, not just detection.</h2>
+          </div>
+
+          <div class="results-grid">
+            <div class="result-card accent">
+              <span class="metric-label">Verb framing</span>
+              <strong>Agentive-heavy</strong>
+              <p>High use of direct action verbs and explicit attribution patterns.</p>
+            </div>
+            <div class="result-card">
+              <span class="metric-label">Tone contour</span>
+              <strong>Confident / assertive</strong>
+              <p>Low hedging; consistent certainty markers and strong causal language.</p>
+            </div>
+            <div class="result-card">
+              <span class="metric-label">Cognitive style</span>
+              <strong>Analytical</strong>
+              <p>Structured argument flow with moderate abstraction and explicit reasoning.</p>
+            </div>
+            <div class="result-card warning">
+              <span class="metric-label">Risk flags</span>
+              <strong>Translation smoothing</strong>
+              <p>Possible lexical normalization, reduced idiosyncrasy, and excess grammatical polish.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
