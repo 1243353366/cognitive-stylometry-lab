@@ -36,4 +36,3 @@ analyzeBtn.addEventListener('click', () => {
     analyzeBtn.disabled = false;
   }, 1200);
 });
-
