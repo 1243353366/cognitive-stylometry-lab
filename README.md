@@ -64,3 +64,7 @@ analyzeBtn.addEventListener('click', () => {
     });
   }, 1400);
 });
+
+---
+
+Thanks for reading. More of my work: [github.com/1243353366](https://github.com/1243353366).
